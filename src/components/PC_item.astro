@@ -1,9 +1,12 @@
 ---
-const { id, title, description, example, codigo1 } = Astro.props
+const { id, mdn_link, title, description, example, codigo1 } = Astro.props
 ---
 
 <article id={id}>
-  <h2>{title}</h2>
+  <div class="titulo">
+    <h2>{title}</h2>
+    <a href={mdn_link} target="_blank"><img src = "./src/images/link.svg" title="abrir pseudoclase en MDN" alt="link a MDN"></a>
+  </div>
   <div class="explanati">
     <div class="texto">
       <p set:html={description}></p>
@@ -23,10 +26,21 @@ const { id, title, description, example, codigo1 } = Astro.props
     padding: 1rem;
   }
 
-  h2 {
+  .titulo {
+    display: flex;
+  }
+
+  .titulo h2 {
     color: indianred;
     font-size: 2rem;
   }
+
+  .titulo a img {
+    width: 0.8rem;
+    padding-top: 1.2rem;
+    margin-left: 0.75rem;
+  }
+
   .explanati {
     margin-top: 0.5rem;
     display: flex;
@@ -44,7 +58,8 @@ const { id, title, description, example, codigo1 } = Astro.props
   }
 
   pre {
-    white-space: pre;
+    white-space: pre-line;
+    width: 100%;
   }
   
 </style>
