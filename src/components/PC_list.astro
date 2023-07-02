@@ -1,11 +1,17 @@
 ---
 import PCItem from "./PC_item.astro";
 const allPC = await Astro.glob("../content/*.md")
+const allPCSorted = allPC.sort( (pc1, pc2) => {return pc1.frontmatter.idn - pc2.frontmatter.idn} )
 ---
+
+{
+//console.log("prueba: ", allPC[10].frontmatter.title > allPC[11].frontmatter.title)
+allPCSorted.map( (p) => { console.log(p.frontmatter.title) })
+}
 
 <section class="main_content" id="pc-content">
   {
-    allPC.map( (pseudoc) => (
+    allPC.sort( (pc1, pc2) => pc1.frontmatter.idn - pc2.frontmatter.idn ).map( (pseudoc) => (
       <PCItem id = {pseudoc.frontmatter.id}
               mdn_link = {pseudoc.frontmatter.mdn_link}
               title = {pseudoc.frontmatter.title}

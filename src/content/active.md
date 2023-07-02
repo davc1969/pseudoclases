@@ -1,5 +1,6 @@
 ---
 id: "active"
+idn: 1
 mdn_link: https://developer.mozilla.org/en-US/docs/Web/CSS/:active
 title: :active
 description: 'Esta pseudoclase representa al elemento que está siendo activado por el usuario.  Si se utiliza el ratón para hacerlo, la activación ocurre solo cuando se presiona el botón principal.  Si es por el teclado, la activación ocurre cuando un elemento que pueda tener el foco recibe a la tecla Enter o la Barra Espaciadora.<br>
@@ -8,7 +9,7 @@ A diferencia de <a href=#focus">:focus</a>, esta pseudoclase no permanece en el 
 
 <pre is:raw>
 button:active {
-  background-color: lightblue;
+&nbsp;&nbsp;background-color: lightblue;
 }
 </pre>
 <div class="codebox">

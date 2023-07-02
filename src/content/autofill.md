@@ -1,5 +1,6 @@
 ---
 id: autofill
+idn: 10
 mdn_link: https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill
 title: :autofill
 description: 'En cualquier elemento de entrada de información (&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;, por ejemplo), representa al elemento cuya información ha sido llenada por el navegador automáticamente.  Si el usuario edita esa información, la pseudoclase es desactivada'
@@ -21,8 +22,6 @@ input:autofill {
 
 <style>
   #frm_autofill {
-    margin-top: 1rem;
-    padding-block: 2rem;
     background-color: #eee;
     text-align: center;
     color: black;

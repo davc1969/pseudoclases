@@ -1,9 +1,11 @@
 ---
 id: default
+idn: 20
 mdn_link: https://developer.mozilla.org/en-US/docs/Web/CSS/:default
 title: :default
 description: 'Representa la opción activada por defecto de un elemento binario de entrada de datos como un input tipo <strong>radio</strong> o <strong>checkbox</strong>.<br>
 Esta pseudoclase se activa cuando el elemento está encendido, es decir tiene su estado <em>on</em>, lo cual se logra incialmente con el atributo <strong>checked</strong> presente en la etiqueta HTML correspondiente.<br>
+También sirve para elementos <strong>option</strong> dentro de una etiqueta <strong>select</strong>.  También puede aplicarse a botones (<strong>button</strong>) dentro de un formulario.
 El estilo permanece en el elemento para indicar que fue la opción por defecto.'
 ---
 
@@ -17,7 +19,7 @@ html:
 
 css:
 input[type = "checkbox"]:default {
-  outline: 2px dashed gold;
+&nbsp;&nbsp;outline: 2px dashed gold;
 }
 
 </pre>
@@ -33,14 +35,16 @@ input[type = "checkbox"]:default {
 
 <style>
   #frm_default {
-    margin-top: 1rem;
-    padding-block: 2rem;
     background-color: #eee;
     color: black;
   }
 
   #frm_default input[type = "checkbox"]:default {
     outline: 2px dashed gold;
+  }
+
+  pre {
+    white-space: pre-line;
   }
 
 </style>

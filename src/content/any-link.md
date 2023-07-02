@@ -1,5 +1,6 @@
 ---
 id: any-link
+idn: 5
 mdn_link: https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link
 title: :any-link
 description: 'Representa al origen de cualquier enlace dentro del documento, es decir puede representar a cualquier elemento <strong><code>&lt;a&gt;</code></strong> o <strong><code>&lt;area&gt;</code></strong> ya que ambos tienen atributo <strong><code>href</code></strong>.<br>
@@ -13,9 +14,9 @@ html:
 
 css:
 a:any-link {
-  background-color: lightblue;
-  padding-inline: 0.5rem;
-  color: red;
+&nbsp;&nbsp;background-color: lightblue;
+&nbsp;&nbsp;padding-inline: 0.5rem;
+&nbsp;&nbsp;color: red;
 }
 </pre>
 <div class="codebox">
@@ -26,8 +27,6 @@ a:any-link {
 
 <style>
   .codebox {
-    margin-top: 1rem;
-    padding-block: 2rem;
     background-color: #eee;
     text-align: center;
     color: black;

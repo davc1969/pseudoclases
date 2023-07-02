@@ -1,5 +1,6 @@
 ---
 id: checked
+idn: 15
 mdn_link: https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
 title: :checked
 description: 'Representa la activación de un elemento binario de entrada de datos como un input tipo <strong>radio</strong> o <strong>checkbox</strong>, así como al elemento <strong>option</strong> dentro de un elemento <strong>select</strong>.<br>
@@ -8,7 +9,7 @@ Esta pseudoclase se activa cuando el elemento está encendido, es decir tiene su
 
 <pre is:raw>
 input[type = "checkbox"]:checked {
-  outline: 2px dotted red;
+&nbsp;&nbsp;outline: 2px dotted red;
 }
 </pre>
 <div class="codebox">
@@ -23,8 +24,6 @@ input[type = "checkbox"]:checked {
 
 <style>
   #frm_checkbox {
-    margin-top: 1rem;
-    padding-block: 2rem;
     background-color: #eee;
     color: black;
   }
